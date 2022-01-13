@@ -1,0 +1,19 @@
+<div class="container">
+	<h1 class="page-title">
+		My Movies List
+	</h1>
+	<br>
+	<label class="page-subtitle" for="fileName">Adicione um filme a sua lista</label><br><br>
+	<label class="page-subtitle" for="nomeFilme">Nome do filme:</label>
+	<input type="text" id="nomeFilme" placeholder="Adicione um nome" />
+	<br>
+	<label class="page-subtitle" for="imagemFilme">Capa do filme:</label>
+	<input type="text" id="imagemFilme" placeholder="Cole o endereço da imagem" /><br><br>
+	<button type="button" id="adicionar" onclick="adicionarFilme(nomeFilme.value,imagemFilme.value)">
+		Adicionar
+	</button>
+	<button type="button" id="exibir" onclick="exibirLista()">
+		Exibir lista
+	</button><br>
+	<p class="page-subtitle" id="resposta"></p>
+	<p class="page-subtitle" id="exibicao"></p>
